@@ -27,6 +27,28 @@ public class TrackerServlet extends HttpServlet {
 
 	}
 
+	/**
+	 * Create = PUT with a new URI 
+	 * POST to a base URI returning a newly created
+	 * URI 
+	 * Read = GET 
+	 * Update = PUT with an existing URI
+	 * Delete = DELETE
+	 */
+	
+	/**
+	 * delete
+	 */
+	@Override
+	protected void doDelete(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		super.doDelete(req, resp);
+	}
+	/**
+	 * create with new URI
+	 * update with existing URI
+	 */
 	@Override
 	protected void doPut(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
@@ -34,6 +56,9 @@ public class TrackerServlet extends HttpServlet {
 		super.doPut(req, resp);
 	}
 
+	/**
+	 * create
+	 */
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
@@ -41,6 +66,9 @@ public class TrackerServlet extends HttpServlet {
 		super.doPost(req, resp);
 	}
 
+	/**
+	 * read
+	 */
 	@SuppressWarnings("unchecked")
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws IOException {

@@ -9,10 +9,18 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 		<servlet-class>com.altostrat.moritani.samples.tracker.TrackerServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
+		<servlet-name>Crumbs</servlet-name>
+		<url-pattern>/crumbs</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Crumbs</servlet-name>
+		<servlet-class>com.altostrat.moritani.samples.tracker.CrumbsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
 		<servlet-name>Tracker</servlet-name>
 		<url-pattern>/tracker</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
+		<welcome-file>map.html</welcome-file>
 	</welcome-file-list>
 </web-app>
